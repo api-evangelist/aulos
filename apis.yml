@@ -1,23 +1,74 @@
 aid: aulos
+
 name: Aulos
-description: 'Aulos is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://aulos.b-cdn.net/wp-content/uploads/2021/12/Aulos-Bio-logo-for-social-share-300-x-300.jpg
+
+description: 'Aulos Bioscience develops an immune‑activating antibody therapeutic, imneskibart (AU‑007), that binds the interleukin‑2 region interacting with the CD25 receptor to shift IL‑2 activity toward immune activation and away from suppression. The company is advancing this investigational product in Phase 1/2 trials for patients with unresectable locally advanced or metastatic solid‑tumor cancers, including melanoma and renal cell carcinoma. Its focus is on delivering a novel IL‑2‑based therapy to cancer patients and the clinical research community.'
+
 url: https://raw.githubusercontent.com/api-evangelist/aulos/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Oncology
+- Biopharma
+- Antibody Therapeutics
+- IL-2 Therapeutics
+- Clinical Trials
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/aulos-hosts.yml
+- type: Leadership
+  url: https://aulosbio.com/about-us/leadership/
+- type: DomainSecurity
+  url: security/aulos-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/aulos_stock/
+  url: https://aulosbio.com/
+- type: Documentation
+  url: https://aulosbio.com/about-us/
+- type: TermsOfService
+  url: https://aulosbio.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://aulosbio.com/privacy-policy/
+- type: Contact
+  url: https://aulosbio.com/contact/
+- type: Careers
+  url: https://aulosbio.com/careers/
+- type: Newsroom
+  url: https://aulosbio.com/newsroom/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The provider's website offers only HTML documentation with no machine‑readable OpenAPI, AsyncAPI, GraphQL, gRPC or WSDL contracts.
+  evidence:
+    - url: https://aulosbio.com
+      status: 200
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
