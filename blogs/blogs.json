@@ -1,0 +1,14 @@
+{
+  "repo": "aulos",
+  "feeds": [
+    {
+      "source": "https://aulosbio.com/feed/",
+      "feed_url": "https://aulosbio.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-10-10T13:15:00Z"
+}
